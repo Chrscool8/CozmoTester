@@ -4,8 +4,6 @@ using UnityEditor.Scripting.Python;
 using UnityEditor;
 public class littleDance : UnityEngine.MonoBehaviour
 {
-        [MenuItem("Python/Hello World")]
-
     public void OnItemClicked()
     {
         PythonRunner.RunString(@"

@@ -4,7 +4,6 @@ using UnityEditor.Scripting.Python;
 using UnityEditor;
 public class sayHello : UnityEngine.MonoBehaviour
 {
-        [MenuItem("Python/Hello World")]
 
     public void OnItemClicked()
     {
