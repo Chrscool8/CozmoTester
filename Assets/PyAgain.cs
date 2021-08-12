@@ -16,18 +16,20 @@ public class PyAgain : UnityEngine.MonoBehaviour
             Debug.Log("Clicked Click");
             GameObject.Find("Button_Start").GetComponentInChildren<Text>().text = "Started";
 
-            PythonRunner.RunString(@"
+            /*PythonRunner.RunString(@"
 import cozmo
 import UnityEngine;
 UnityEngine.Debug.Log('hello world')
-UnityEngine.GameObject.Find('Button_Start').GetComponentInChildren<Text>().text = 'Started'
 
 def cozmo_program(robot: cozmo.robot.Robot):
     robot.move_head(5)
     robot.say_text('Hello Digital Dream Labs!').wait_for_completed()
     robot.move_head(-5)
 
-cozmo.run_program(cozmo_program)");
+cozmo.run_program(cozmo_program)");*/
+
+            //PythonRunner.RunFile("Assets/UdpComms.py");
+            PythonRunner.RunFile("Assets/server.py");
         }
     }
 }

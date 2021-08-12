@@ -4,8 +4,8 @@ using UnityEditor.Scripting.Python;
 using UnityEngine;
 using Python.Runtime;
 
-namespace UnityEditor.Scripting.Python.Samples
-{
+//namespace UnityEditor.Scripting.Python.Samples
+//{
     /// <summary>
     /// This is a simplified example of how to create a menu item to launch a
     /// PySide2 dialog.
@@ -124,4 +124,4 @@ namespace UnityEditor.Scripting.Python.Samples
             }
         }
     }
-}
+//}
